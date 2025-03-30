@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwingView - AI-Powered Golf Swing Analyzer</title>
+    <link rel="stylesheet" href="/src/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Add custom meta tags -->
+    <meta name="description" content="SwingView helps golfers analyze and improve their swing with AI-powered detection and frame-by-frame analysis.">
+    <!-- Add favicon reference -->
+    <link rel="icon" href="assets/S-logo.png" type="image/x-icon">
+    <!-- Add custom styles -->
+    <style>
+        .hero-gradient {
+            background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(249,250,251,1) 100%);
+        }
+        .cta-button {
+            background-color: rgb(122, 185, 67);
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: rgb(100, 160, 50);
+            transform: translateY(-2px);
+        }
+        .feature-card {
+            transition: all 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-sm z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
+            <div class="flex items-center">
+                <img src="assets/SwingViewLogoFlat.png" alt="SwingView" class="h-10" />
+            </div>
+            <div class="hidden md:flex space-x-8 text-gray-600">
+                <a href="#features" class="hover:text-gray-900 transition">Features</a>
+                <a href="#how-it-works" class="hover:text-gray-900 transition">How It Works</a>
+                <a href="#testimonials" class="hover:text-gray-900 transition">Testimonials</a>
+            </div>
+            <button class="cta-button px-5 py-2 text-white rounded-lg font-medium shadow-md">
+                Get Started
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-center pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+        <div class="container mx-auto max-w-5xl">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">View Your Swing with AI</h1>
+            <p class="text-xl text-gray-600 mt-6 max-w-2xl mx-auto">
+                SwingView automatically detects and trims your golf swings for easy analysis.
+            </p>
+            <div class="mt-8 flex justify-center">
+                <div class="relative w-full max-w-3xl mx-auto rounded-xl overflow-hidden shadow-2xl">
+                    <video src="assets/swingview_preview.mp4" autoplay loop muted playsinline class="w-full"></video>
+                </div>
+            </div>
+            <div class="mt-10">
+                <a href="#download" class="cta-button inline-block px-8 py-3 text-white rounded-lg font-medium shadow-lg">
+                    Download Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Why Golfers Love SwingView</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="feature-card p-6 text-center bg-white shadow-md rounded-2xl border border-gray-100">
+                    <div class="inline-block p-3 mb-4 rounded-full bg-green-100">
+                        <span class="text-3xl">🏌️</span>
+                    </div>
+                    <h3 class="text-xl font-semibold">AI-Powered Detection</h3>
+                    <p class="text-gray-600 mt-3">Automatically detects your swing start and end for precise analysis.</p>
+                </div>
+                <div class="feature-card p-6 text-center bg-white shadow-md rounded-2xl border border-gray-100">
+                    <div class="inline-block p-3 mb-4 rounded-full bg-green-100">
+                        <span class="text-3xl">🎥</span>
+                    </div>
+                    <h3 class="text-xl font-semibold">Frame-by-Frame Playback</h3>
+                    <p class="text-gray-600 mt-3">Review every detail of your swing in slow motion.</p>
+                </div>
+                <div class="feature-card p-6 text-center bg-white shadow-md rounded-2xl border border-gray-100">
+                    <div class="inline-block p-3 mb-4 rounded-full bg-green-100">
+                        <span class="text-3xl">🔒</span>
+                    </div>
+                    <h3 class="text-xl font-semibold">Privacy First</h3>
+                    <p class="text-gray-600 mt-3">Your swing data stays private and secure. No cloud storage required.</p>
+                </div>
+                <div class="feature-card p-6 text-center bg-white shadow-md rounded-2xl border border-gray-100">
+                    <div class="inline-block p-3 mb-4 rounded-full bg-green-100">
+                        <span class="text-3xl">📲</span>
+                    </div>
+                    <h3 class="text-xl font-semibold">Easy Sharing</h3>
+                    <p class="text-gray-600 mt-3">Export your swing highlights and share them with friends or coaches.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section (New) -->
+    <section id="testimonials" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="container mx-auto max-w-5xl">
+            <h2 class="text-3xl font-bold text-center mb-16">What Golfers Are Saying</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="p-8 bg-gray-50 rounded-2xl shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gray-200 rounded-full mr-4"></div>
+                        <div>
+                            <h4 class="font-semibold">Dad</h4>
+                            <div class="flex text-yellow-400">
+                                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">It's very easy to see my swings now!</p>
+                </div>
+                <div class="p-8 bg-gray-50 rounded-2xl shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gray-200 rounded-full mr-4"></div>
+                        <div>
+                            <h4 class="font-semibold">Brother</h4>
+                            <div class="flex text-yellow-400">
+                                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">Nice!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="download" class="relative overflow-hidden py-20 px-4 md:px-8" style="background: linear-gradient(135deg, rgb(122, 185, 67) 0%, rgb(88, 150, 40) 100%);">
+        <div class="container mx-auto max-w-4xl relative z-10">
+            <!-- Main Content -->
+            <div class="text-center">
+                <h2 class="text-3xl md:text-5xl font-extrabold text-white leading-tight mb-6">Elevate Your Golf Game Today</h2>
+                <p class="text-xl text-white/90 max-w-2xl mx-auto mb-8">Analyze, improve, and perfect your swing with SwingView's professional-grade tools.</p>
+                
+                <!-- App Store Button -->
+                <div class="mb-10">
+                    <a href="#" class="inline-block hover:transform hover:scale-105 transition-all duration-300">
+                        <img src="assets/app_store.jpeg" alt="Download on the App Store" class="h-16 rounded-lg shadow-xl" />
+                    </a>
+                </div>
+                
+                <!-- Features -->
+                <div class="flex flex-wrap justify-center gap-8 text-white mb-8">
+                    <div class="flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                        <span>AI-powered</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                        <span>Completely Free!</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11.08V8l-6-6H6a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2v-3.08c.62-.7 1-1.62 1-2.92 0-1.3-.38-2.22-1-2.92z"/><path d="M13 2v6h6"/></svg>
+                        <span>Easy to Use</span>
+                    </div>
+                </div>
+                
+                <!-- Social Proof -->
+                <p class="text-white/80 text-sm">Trusted by golfers worldwide</p>
+            </div>
+        </div>
+        
+        <!-- Background Elements -->
+        <div class="absolute top-0 right-0 w-64 h-64 rounded-full bg-white/10 blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 w-80 h-80 rounded-full bg-white/5 blur-3xl"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4">
+        <div class="container mx-auto">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <img src="assets/SwingViewLogoFlat.png" alt="SwingView" class="h-10 mb-4" />
+                    <p class="text-gray-400 text-sm">
+                        SwingView helps golfers of all levels improve their technique with AI-powered analysis.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#features" class="hover:text-white transition">Features</a></li>
+                        <li><a href="#how-it-works" class="hover:text-white transition">How It Works</a></li>
+                        <li><a href="#testimonials" class="hover:text-white transition">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>support@swingviewapp.com</li>
+                        <li><a href="/privacy-policy.html" class="hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="/terms-of-service.html" class="hover:text-white transition">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500 text-sm">
+                &copy; 2025 SwingView. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
